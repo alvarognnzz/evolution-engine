@@ -1,7 +1,14 @@
 class Entity:
     def __init__(self):
-        self.x = 0
-        self.y = 0
+        self.components = {}
 
+    def add_component(self, component):
+        self.components[component.name] = component
+    
+    def get_component(self, name):
+        return self.components.get(name)
+    
     def update(self):
-        pass
+        for component in self.components.values():
+            if hasattr(component, 'update'):
+                component.update()

@@ -1,5 +1,5 @@
-from chunk import Chunk
-from entity import Entity
+from .chunk import Chunk
+from .entity import Entity
 
 class World:
     def __init__(self, width, height):
@@ -21,6 +21,5 @@ class World:
         self.entities.append(entity)
 
     def tick(self):
-        print('hola')
         for entity in self.entities:
             entity.update()

@@ -1,6 +1,6 @@
 # Evolution Engine
 
-Evolution Engine is a lightweight, modular engine designed for creating games, simulations, and interactive systems using an **Entity-Component-System (ECS)** architecture. It provides a flexible and extensible foundation to build different types of software.
+Evolution Engine is a lightweight, modular engine designed for creating games, simulations, and interactive systems. It provides a flexible and extensible foundation to build different types of software.
 
 ## Features
 
